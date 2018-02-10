@@ -1,0 +1,8 @@
+<div>
+    <input type="text" placeholder="{{$ctrl.placeholder}}" ng-keyup="$ctrl.autoComplete()" 
+        ng-model="$ctrl.searchText" maxlength="256">
+    <input type="button">
+    <ul ng-show="$ctrl.isResultShow" ng-repeat="(index, $item) in $ctrl.results">
+        <li ng-click="$ctrl.getDetail($item)">{{$item.name}}</li>
+    </ul>
+</div>

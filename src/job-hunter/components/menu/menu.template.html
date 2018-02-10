@@ -1,0 +1,11 @@
+<ul>
+    <li ng-repeat="(index, $item) in $ctrl.menusConf" ng-mouseover="$ctrl.select(index)" ng-mouseleave="$ctrl.unselectAll()">
+        <span>{{$item.mainTopic}}</span>
+        <ul>
+            <li ng-repeat="(index, $subItem) in $item.subTopic">
+                <a ui-sref="$subItem.state">{{$subItem.name}}</a>
+                <com-submenu submenu-conf="$subItem.submenuConf"></com-submenu>
+            </li>
+        </ul>
+    </li>
+</ul>

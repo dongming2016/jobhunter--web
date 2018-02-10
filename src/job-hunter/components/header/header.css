@@ -1,0 +1,80 @@
+.jh-header {
+    background: #000;
+    color: #fff;
+    
+    & > ul {
+        display: inline-block;
+        margin:7px 0;
+
+        & > li {
+            display: inline-block;
+            line-height: 15px;
+            border-left: 1px solid wheat;
+            padding-left: 10px;
+            &.active {
+                color: #08d7a2;
+            }
+            &:first-child {
+                border: 0;
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+
+.jh-right {
+    float: right;
+}
+
+.jh-phone-logo {
+    background: url(G:/study/jobhunterweb/src/assess/img/header/app-icon.png) no-repeat;
+    width: 10px;
+    height: 15px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.jh-login-logo {
+    
+}
+
+.jh-logo {
+    background: url(G:/study/jobhunterweb/src/assess/img/header/app-logo.png) no-repeat; 
+    height: 40px;
+    width: 100px;
+
+    
+}
+
+.jh-header-container {
+    border-bottom: 1px solid #ddd;
+    height: 85px;
+}
+.jh-nav {
+    display: inline-flex;
+    margin-top: 8px;
+    margin-left: 16px;
+    
+    & > .jh-nav-left {
+        display: inline-flex;
+    }
+    & > ul {
+        margin: 0;
+        & > li {
+            height: 40px;
+            line-height: 40px;
+            display: inline-flex;
+            color: #999; 
+            &.active {
+                color: #333;
+                border-bottom:  2px solid #00b38a;
+            }
+            & > a {
+                text-decoration: none;
+                color: inherit;
+            }
+        } 
+    }
+}
+

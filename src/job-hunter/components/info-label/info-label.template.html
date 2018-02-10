@@ -1,0 +1,17 @@
+<div>
+    <div class="info-title">
+        <strong>{{$ctrl.position}}</strong>
+        <div>{{$ctrl.issueTime}}</div>
+        <i class="info-chat" ng-mouseover="$ctrl.QRCodeShow=true"></i>
+        <div ng-show="$ctrl.QRCodeShow">
+            <img class="info-company-title" src="{{$ctrl.companyTitle}}">
+            <div>{{$ctrl.advertise}}</div>
+            <div>{{$ctrl.QRCode}}</div>
+        </div>
+        <div>{{$ctrl.salary}}</div>
+    </div>
+    <div>{{$ctrl.requirement}}</div>
+    <div>
+        <div ng-repeat="$item in $ctrl.labels" title="{{$item.name}}">{{$item.name}}</div>
+    </div>
+</div>

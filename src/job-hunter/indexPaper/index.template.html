@@ -1,0 +1,20 @@
+<div>
+    <com-searchbox get-search-result="$ctrl.getSearch(text)" search-detail="$ctrl.getDetail(id)"></com-searchbox>
+</div>
+    <com-menu menus-conf="$ctrl.menusConf"></com-menu>
+</div>
+<com-tab>
+    <com-img ng-repeat="$item in $ctrl.imgs">{{$item}}</com-img>
+</com-tab>
+<com-alert-box alert-title='{{$ctrl.alertTitle}}' ng-show='$ctrl.isBoxShow' hide-box='$ctrl.isBoxShow = false;'>
+    <div class="index-alert-content">
+        <div class="index-altert-header"><strong>亲爱的用户您好：</strong>
+            <div>切换城市分站，让我们为您提供更准确的职位信息</div></div>
+        <div><span>点击进入</span><a class="tab focus">{{$ctrl.chosedCity}}</a><span>or 切换到以下城市</span></div>
+        <ul>
+            <li ng-repeat="$items in $ctrl.cities">
+                <a ng-click="$ctrl.cityCallback($items.id)" class="tab" ng-class="">{{$items.name}}</a>
+            </li>
+        </ul>
+    </div>
+</com-alert-box>

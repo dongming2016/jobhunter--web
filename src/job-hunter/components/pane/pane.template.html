@@ -1,0 +1,8 @@
+<div>
+    <div class="pane-title">{{$ctrl.paneData.title}}</div>
+    <div class="pane-content">
+        <ul>
+            <li ng-repeat="$item in $ctrl.paneData.datas"><a ui-sref="$item.state">{{$item.name}}</a></li>
+        </ul>
+    </div>
+</div>

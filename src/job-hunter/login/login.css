@@ -1,0 +1,140 @@
+.jh-login-container {
+    height: 100vh;
+}
+.jh-login-background {
+    background:#00B38A;
+    height: 50%;
+}
+
+.login-logo {
+    width:160px;
+    height: 60px;
+    margin-bottom: 30px; 
+    background: url(G:/study/jobhunterweb/src/assess/img/login/app-logo.png) no-repeat; 
+}
+
+.login-box {
+    position: absolute;
+    left: calc(50% - 324px);
+    top: 60px;    
+}
+.login-div {
+    background: #fff;
+    border: 1px solid #dce1e6;
+    border-radius: 2px;
+    padding: 62px 70px 68px 78px; 
+    display: flex;
+    justify-content: space-between;        
+}
+.login-content-title {
+    border-bottom: 1px solid #ddd;
+    & > div {
+        display: inline-block;
+        font-size: 16px;
+        width: 154px;
+        text-align: center;
+        height: 24px;
+        line-height: 24px;
+        padding: 12px 0;
+        
+        &.active {
+            color: #00b38a;
+            border-bottom: 1px solid #00b38a;
+
+            &::after {
+                content: '';
+                position: relative;
+                top: 23%;
+                left: 50%;
+                display: block;
+                background: #fff;
+                width: 12px;
+                height: 12px;
+                transform: rotate(45deg);
+                border-left: 1px solid #00b38a;
+                border-top: 1px solid #00b38a;;
+            }
+        }
+    }
+}
+
+.login-content-input {
+    margin-top: 10px;
+    & > input {
+        display: block;
+        height: 44px;
+        line-height: 44px;
+        font-size: 14px;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-color: #ededed;
+        margin-top: 20px;
+        border: none;
+        width: 299px;
+        &::placeholder {
+            color: #B5B5B5;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    
+}
+
+.login-lost-pwd {
+    color: #00b38a;
+    font-size: 12px;
+    cursor: pointer;
+    float: right;
+    margin:15px 0; 
+}
+.login-content-box {
+    width: 318px;
+    padding-right: 50px;
+    border-right: 1px dashed #ddd; 
+}
+.login-content-box::after {
+    content: 'or';
+    color: #ddd;
+    position: absolute;
+    left: calc(100% - 210px);
+    top: calc(50% + 50px);
+}
+.login-button {
+    clear: right;
+    width: 308px;
+    height: 46px;
+    cursor: pointer;
+    line-height: 46px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    background: #00b38a;
+}
+
+.register-div {
+    padding-top: calc(50% - 150px);
+    width: 80px;
+    padding-left: 50px;
+}
+
+.no-account {
+    color: #555;
+    font-size: 14px;
+}
+.error-tips {
+    color: #fd5f39;
+    font-size: 12px;
+    margin:8px;
+}
+.register-go {
+    margin-top: 8px;
+    color: #00b38a;
+    cursor: pointer;
+    background: url(G:/study/jobhunterweb/src/assess/img/login/icon-arrow-right.png) right center no-repeat;
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,26 @@
+<div class="jh-login-container">
+    <div class="jh-login-background"></div>
+    <div class="login-box">
+        <div class="login-logo"></div>
+        <div class="login-div">
+            <div class="login-content-box">
+                <div class="login-content-title">
+                    <div ng-class="{'active': $ctrl.showItem == 1}" ng-click="$ctrl.showItem=1">密码登录</div>
+                    <div ng-class="{'active': $ctrl.showItem == 2}" ng-click="$ctrl.showItem=2">验证码登录</div>
+                </div>
+                <div class="login-content-input" ng-show="$ctrl.showItem == 1">
+                    <input type="text" placeholder="请输入常用手机号/邮箱" ng-model="$ctrl.nickname">
+                    <span ng-show="$ctrl.errorInfo.isNameError" class="error-tips">{{$ctrl.errorInfo.nameError}}</span>
+                    <input type="password" placeholder="请输入密码" ng-model="$ctrl.password">
+                    <span ng-show="$ctrl.errorInfo.isPwdError" class="error-tips">{{$ctrl.errorInfo.pwdError}}</span>
+                    <div class="login-lost-pwd">忘记密码？</div>
+                </div>
+                <div class="login-button" ng-click="$ctrl.submit()">登录</div>
+            </div>
+            <div class="register-div">
+                <div class="no-account">还没有账号:</div>
+                <div class="register-go" ui-sref="">立即注册<i></i></div>
+            </div>
+        </div>
+    </div>
+</div>

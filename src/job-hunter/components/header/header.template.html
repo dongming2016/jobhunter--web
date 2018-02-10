@@ -1,0 +1,32 @@
+<div class="jh-header-container">
+    <div class="jh-header">
+        <ul class="jh-left">
+            <li ng-repeat="(index, $item) in $ctrl.menu.header.left" class="{{$item.itemClass}}" ng-click="$ctrl.activeIndex = index;" ng-class="{'active': $ctrl.activeIndex == index}">
+                <i class="{{$item.iconClass}}"></i><a>{{$item.name}}</a>
+            </li>
+        </ul>
+        <ul class="jh-right" ng-repeat="$item in $ctrl.menu.header.right">
+            <li>
+                {{$item.name}}
+            </li>
+        </ul>
+    </div>
+    <div class="jh-nav">
+        <div class="jh-nav-left">
+            <div class="{{$ctrl.menu.logo}}"></div>
+            <div ng-repeat="$item in $ctrl.menu.options">
+                <div ng-class="$item.itemClass" ng-click="$item.showBox()">
+                    {{$item.name}}
+                </div>
+            </div>
+        </div>
+        <ul class="jh-nav-middle">
+            <li ng-repeat="(index, $item) in $ctrl.menu.middleItem" ng-class="{'active': $ctrl.navActiveIndex == index}" ng-click="$ctrl.navActiveIndex = index;">
+                <a ui-sref="{{$item.href}}">{{$item.name}}</a>
+            </li>
+        </ul>
+        <ul>
+            <li ng-repeat="$item in $ctrl.menu.left">{{$item.name}}</li>
+        </ul>
+    </div>
+</div>
