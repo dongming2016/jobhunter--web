@@ -1,5 +1,5 @@
 .jh-mask {
-    background: url(G:/study/jobhunterweb/src/assess/img/alert/alert-background.png);
+    background: url($img-path/alert/alert-background.png);
     opacity: 0.9;
     cursor: pointer;
     display: block;
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     padding-left: 16px;
-    background: #00b38a;
+    background: $color;
     color: #fff;
     height: 40px;
     line-height: 40px;

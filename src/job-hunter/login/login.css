@@ -10,7 +10,7 @@
     width:160px;
     height: 60px;
     margin-bottom: 30px; 
-    background: url(G:/study/jobhunterweb/src/assess/img/login/app-logo.png) no-repeat; 
+    background: url($img-path/login/app-logo.png) no-repeat; 
 }
 
 .login-box {
@@ -133,7 +133,7 @@
     margin-top: 8px;
     color: #00b38a;
     cursor: pointer;
-    background: url(G:/study/jobhunterweb/src/assess/img/login/icon-arrow-right.png) right center no-repeat;
+    background: url($img-path/login/icon-arrow-right.png) right center no-repeat;
     &:hover {
         text-decoration: underline;
     }

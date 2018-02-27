@@ -28,7 +28,7 @@
 }
 
 .jh-phone-logo {
-    background: url(G:/study/jobhunterweb/src/assess/img/header/app-icon.png) no-repeat;
+    background: url($img-path/header/app-icon.png) no-repeat;
     width: 10px;
     height: 15px;
     margin-right: 8px;
@@ -40,7 +40,7 @@
 }
 
 .jh-logo {
-    background: url(G:/study/jobhunterweb/src/assess/img/header/app-logo.png) no-repeat; 
+    background: url($img-path/header/app-logo.png) no-repeat; 
     height: 40px;
     width: 100px;
 

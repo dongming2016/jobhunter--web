@@ -1,7 +1,6 @@
 import angular from 'angular';
 import alertTemplate from './alert.template.html';
 import alertController from './alert.controller';
-import alert from './alert.css';
 
 export default angular.module('alertBox', [])
     .component('comAlertBox', {
