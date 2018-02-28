@@ -1,17 +1,26 @@
-<div>
+<div class="info-label-container">
     <div class="info-title">
-        <strong>{{$ctrl.position}}</strong>
-        <div>{{$ctrl.issueTime}}</div>
-        <i class="info-chat" ng-mouseover="$ctrl.QRCodeShow=true"></i>
-        <div ng-show="$ctrl.QRCodeShow">
-            <img class="info-company-title" src="{{$ctrl.companyTitle}}">
-            <div>{{$ctrl.advertise}}</div>
-            <div>{{$ctrl.QRCode}}</div>
+        <div ui-sref="$ctrl.labelInfo.state">{{$ctrl.labelInfo.position}}</div>
+        <div class="info-issue-time">[{{$ctrl.labelInfo.issueTime}}]</div>
+        <i class="info-chat" ng-mouseover="$ctrl.labelInfo.QRCodeShow=true"></i>
+        <div ng-show="$ctrl.QRCodeShow" ng-mouseleave="$ctrl.labelInfo.QRCodeShow=false">
+            <i class="info-company-title info-company-{{$ctrl.labelInfo.companyId}}"></i>
+            <div>
+                <div>{{$ctrl.labelInfo.nickname}}</div>
+                <div>{{$ctrl.labelInfo.hrPosition}}</div>
+            </div>
+            <div>{{$ctrl.labelInfo.advertise}}</div>
+            <div>{{$ctrl.labelInfo.QRCode}}</div>
         </div>
-        <div>{{$ctrl.salary}}</div>
+        <div class="info-issue-salary">{{$ctrl.labelInfo.salary}}</div>
     </div>
-    <div>{{$ctrl.requirement}}</div>
+    <div class="info-position-require">{{$ctrl.labelInfo.requirement}}</div>
     <div>
-        <div ng-repeat="$item in $ctrl.labels" title="{{$item.name}}">{{$item.name}}</div>
+        <div class="info-label" ng-repeat="$item in $ctrl.labelInfo.labels" title="{{$item.name}}">{{$item.name}}</div>
+    </div>
+    <div class="des-company-container">
+        <i class="des-company-{{$ctrl.labelInfo.companyId}}"></i>
+        <div ui-sref="$ctrl.labelInfo.companyState">{{$ctrl.labelInfo.companyName}}</div>
+        <div class="des-company-description">{{$ctrl.labelInfo.description}}</div>
     </div>
 </div>

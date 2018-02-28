@@ -6,6 +6,7 @@
 <com-tab>
     <com-img ng-repeat="$item in $ctrl.imgs">{{$item}}</com-img>
 </com-tab>
+<com-info-label label-info="$ctrl.labelInfo"></com-info-label>
 <com-alert-box alert-title='{{$ctrl.alertTitle}}' ng-show='$ctrl.isBoxShow' hide-box='$ctrl.isBoxShow = false;'>
     <div class="index-alert-content">
         <div class="index-altert-header"><strong>亲爱的用户您好：</strong>

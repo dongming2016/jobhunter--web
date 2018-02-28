@@ -1,4 +1,5 @@
 @import "variables.css";
+@import "global.css";
 @import "./components/index.css";
 @import "./login/login.css";
 @import "./indexPaper/index.css";

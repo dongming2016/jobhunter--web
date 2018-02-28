@@ -28,6 +28,31 @@ class indexCtrl {
         }];
 
         this.imgs = ['a', 'b'];
+        this.labelInfo = {
+            position : '总裁助理',
+            issueTime : '2018-01-31',
+            companyId : 'abe',
+            nickname : 'abf',
+            hrPosition : 'abs',
+            advertise : 'ab',
+            QRCode : 'ab',
+            salary : '10k-15k',
+            requirement : '经验不限/本科',
+            labels : [
+                {
+                    name: '金融',
+                },
+                {
+                    name: '政府关系',
+                },
+                {
+                    name: '总助',
+                }
+            ],
+            companyName: '福米科技',
+            companyUrl: '',
+            description: '金融,移动互联网/A轮/长沙',
+        };
     }
 
     clickCallback() {

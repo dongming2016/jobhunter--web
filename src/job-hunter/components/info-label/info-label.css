@@ -1,0 +1,68 @@
+.info-label-container {
+    box-sizing: border-box;
+    border: 1px solid #eaeeed;
+    margin-top: 16px;
+    margin-left: 16px;
+    min-width: 390px;
+    padding: 12px 16px;
+
+    &:hover {
+        box-shadow: 0 0 10px 0 rgba(56,81,76,.12);
+    }
+
+    .info-title {
+        div {
+            display: inline-block;
+            color: #555;
+            &:first-of-type {
+                cursor: pointer;
+                max-width: 145px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                word-wrap: normal;
+                
+                &:hover {
+                    color: #00b38a;
+                }
+
+            }            
+
+            &.info-issue-time {
+                color: #999;
+            }
+            &.info-issue-salary {
+                color: #fa6041;
+                float: right;
+            }
+        }
+    }
+
+    .info-position-require {
+        color: #777;
+        font-size: 14px;
+        height: 32px;
+        line-height: 32px;
+    }
+
+    .info-label {
+        border:1px solid #eaeeed;
+        display: inline-block;
+        margin-right: 12px;
+        padding: 3px 14px;
+        margin-bottom: 16px; 
+        color: #999;
+        font-size: 12px;
+    }
+
+    .des-company-container {
+        border-top: 1px dashed #e0e0e0; 
+        padding-top: 16px;
+        font-size: 14px;
+        
+        .des-company-description {
+            color: #999;            
+        }
+    }
+    
+}

@@ -7,4 +7,7 @@ export default angular.module('infoLabel', [])
         template,
         controller,
         controllerAs: '$ctrl',
+        bindings:{
+            labelInfo: '<',
+        }
     }).name;
