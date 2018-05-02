@@ -7,4 +7,5 @@ import pane from './pane';
 import imgTab from './img-tab';
 import infoLabel from './info-label';
 
-export default angular.module('components', [header, alert, searchbox, menu, pane, imgTab, infoLabel]).name;
+export default angular.module('components', [header, alert, searchbox,
+    menu, pane, imgTab, infoLabel]).name;
