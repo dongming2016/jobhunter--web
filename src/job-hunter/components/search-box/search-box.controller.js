@@ -2,7 +2,7 @@ import angular from 'angular';
 
 class SearchBox {
     constructor() {
-
+        this.placeholder = '请输入关键字';
     }
 
     autoComplete() {

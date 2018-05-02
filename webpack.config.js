@@ -41,6 +41,20 @@ module.exports = {
 			]
 		},
 		{
+			test: /\.(svg)(\?.*)?$/,
+			loader: 'url-loader',
+			options: {
+				limit: 10000,
+			}
+		},
+		{
+			test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+			loader: 'url-loader',
+			options: {
+				limit: 10000,
+			}
+		},
+		{
 			test: /\.css$/,
 			exclude: /node_modules/,
 			use: ExtractTextPlugin.extract(

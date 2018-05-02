@@ -18,6 +18,9 @@
     } 
 }
 
+.seacrh-container {
+    margin-top: 20px;
+}
 .index-altert-header {
     border-bottom: 1px dotted #e5e5e5;
     & > strong {

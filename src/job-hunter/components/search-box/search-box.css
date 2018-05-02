@@ -1,0 +1,32 @@
+.search-box  {
+    width: 60%;
+    min-width: 280px;
+    margin: 0 auto;
+    .search-text {
+        border: 1px solid rgb(238, 238, 238);
+        height: 40px;
+        width: 90%;    
+        padding-right: 30px;
+        font-size: 20px;
+        padding-left: 12px;
+        &:focus {
+            outline: #00b38a auto 5px;          
+        }
+    }
+    
+    .search-button  {
+        vertical-align: middle;
+        height: 42px;
+        line-height: 43px;
+        font-size: 22px;
+        color: #fff;
+        font-weight: 100;
+        display: inline-block;
+        width: 46px;
+        text-align: center;
+        margin-left: -52px;
+        margin-top: -6px; 
+        border: 1px solid #00b38a;
+        background: #00b38a;
+    }
+}
