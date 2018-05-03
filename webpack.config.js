@@ -10,7 +10,8 @@ module.exports = {
 	context: path.join(__dirname, "src"),
 	devtool: debug ? "inline-sourcemap" : "",
 	devServer: {
-      contentBase: './dist'
+			contentBase: './dist',
+			publicPath: '/myapp/front'
     },
 	entry: {
 		app: './app.js',

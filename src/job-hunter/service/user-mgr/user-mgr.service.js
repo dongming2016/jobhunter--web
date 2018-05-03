@@ -13,6 +13,13 @@ class UserMgrService {
             data: userOption,
         });
     }
+
+    register(userOption) {
+        return this.$http({ url:'/myapp/backend/user-mgr/register', 
+            method: 'POST',
+            data: userOption,
+        });
+    }
 }
 
 export default UserMgrService;
