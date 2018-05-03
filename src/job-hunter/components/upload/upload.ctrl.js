@@ -6,6 +6,7 @@ class UploadCtrl {
         this.acceptList = '';
         this.$document = $document;
         this.file = null;
+        this.isFileUpload = true;
         this.uploadService = uploadService;
     }
 
@@ -17,7 +18,11 @@ class UploadCtrl {
         var file = document.querySelector('input[type=file]').files[0];
         var data = new FormData();
         data.append('photos', file);
-        this.uploadService.upload('/myapp/backend/upload', data);
+        this.isFileUpload = true;
+        const upload = this.uploadService.upload('/myapp/backend/upload', data);
+        upload.then(() => {
+            this.isFileUpload = true;
+        });
     }
 }
 

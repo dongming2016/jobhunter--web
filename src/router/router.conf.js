@@ -42,13 +42,13 @@ export default function routing($stateProvider, $locationProvider, $urlRouterPro
             }
         })
         .state('app.formPage', {
-            url: '/',
+            url: '/user-mgr',
             views: {
                 'header': {
                     template: '<com-nav></com-nav>',
                 },
                 'body': {
-                    template: '<upload></upload>',
+                    template: '<user-mgr></user-mgr>',
                 }
             }
         });

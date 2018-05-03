@@ -2,4 +2,5 @@
     <span class="icon-image" ng-click="$ctrl.select()"></span> 
     <input type="file" id="upload" style="display: none;" accept='{{$ctrl.acceptList}}'>
     <span class="icon-upload3" ng-click="$ctrl.upload()"></span>
+    <span class="icon-spinner upload-progress" ng-show="$ctrl.isFileUpload"></span>
 </div>
