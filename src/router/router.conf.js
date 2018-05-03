@@ -29,5 +29,27 @@ export default function routing($stateProvider, $locationProvider, $urlRouterPro
                 }
             }
             
+        })
+        .state('app.uploadPic', {
+            url: '/pictureUpload',
+            views: {
+                'header': {
+                    template: '<com-nav></com-nav>',
+                },
+                'body': {
+                    template: '<upload></upload>',
+                }
+            }
+        })
+        .state('app.formPage', {
+            url: '/',
+            views: {
+                'header': {
+                    template: '<com-nav></com-nav>',
+                },
+                'body': {
+                    template: '<upload></upload>',
+                }
+            }
         });
 }

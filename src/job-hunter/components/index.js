@@ -6,6 +6,8 @@ import menu from './menu';
 import pane from './pane';
 import imgTab from './img-tab';
 import infoLabel from './info-label';
+import upload from './upload';
+import nav from './nav';
 
 export default angular.module('components', [header, alert, searchbox,
-    menu, pane, imgTab, infoLabel]).name;
+    menu, pane, imgTab, infoLabel, upload, nav]).name;

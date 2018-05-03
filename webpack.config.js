@@ -18,7 +18,8 @@ module.exports = {
 	},
 	output: {
 		path: __dirname + '/dist',
-		filename: 'index_bundle_[hash].js'
+		filename: 'index_bundle_[hash].js',
+		publicPath: '/myapp/front',
 	},
 	module: {
 		rules: [

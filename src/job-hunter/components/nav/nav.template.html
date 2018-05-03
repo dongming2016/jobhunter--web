@@ -1,0 +1,7 @@
+<header>
+    <ul>
+        <li ng-repeat="$item in $ctrl.items" class="nav-item">
+            <a ui-sref="{{$item.state}}"><span class="{{$item.class}}"></span><div>{{$item.name}}</div></a>
+        </li>
+    </ul>
+</header>
