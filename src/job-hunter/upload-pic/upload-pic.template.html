@@ -1,3 +1,9 @@
 <div>
-    请上传图片： <com-upload-util accept-list='{{$ctrl.acceptList}}' class="upload-container"></com-upload-util>
+   <com-upload-util accept-list='{{$ctrl.acceptList}}' class="upload-container"></com-upload-util>
 </div>
+
+<com-alert-box alert-title='{{$ctrl.alertTitle}}' ng-show='$ctrl.isBoxShow' hide-box='$ctrl.isBoxShow = false;'>
+        <div class="index-alert-content">
+            <span>上传成功!</span>
+        </div>
+</com-alert-box>

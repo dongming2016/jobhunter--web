@@ -1,18 +1,39 @@
-import angular from 'angular';
-
 class UploadService {
     constructor($http) {
         this.$http = $http;
     }
 
     upload(url, file) {
-        return this.$http({
-            method: 'POST',
-            url,
-            data: file,
-            headers:  {'Content-Type': 'multipart/form-data;boundary=----WebKitFormBoundaryvlb7BC9EAvfLB2q5'},
-            transformRequest: angular.identity,
+        const xhr = new XMLHttpRequest();
+        const formData = new FormData();
+        formData.append('photos', file);
+        xhr.open('POST', url, true);
+
+        const promise = new Promise((resolve, reject) => {
+            //上传完成
+            xhr.onload = () => {
+                if (xhr.status == 200) {
+                    console.log('hello');
+                    resolve('success');
+                }
+            };
+
+            xhr.onerror = (data) => {
+                reject(data);
+            };
         });
+        
+        xhr.onabort = () => {
+
+        };
+
+        // 计算进度，并增加回调函数。
+        xhr.onprogress = () => {
+
+        };
+
+        xhr.send(formData);
+        return promise;
     }
 }
 

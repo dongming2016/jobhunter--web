@@ -51,5 +51,16 @@ export default function routing($stateProvider, $locationProvider, $urlRouterPro
                     template: '<user-mgr></user-mgr>',
                 }
             }
+        })
+        .state('app.showPic', {
+            url: '/show-pic',
+            views: {
+                'header': {
+                    template: '<com-nav></com-nav>',
+                },
+                'body': {
+                    template: '<show-pics></show-pics>',
+                }
+            }
         });
 }

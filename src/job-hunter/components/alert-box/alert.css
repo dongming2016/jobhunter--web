@@ -1,6 +1,6 @@
 .jh-mask {
-    background: url($img-path/alert/alert-background.png);
-    opacity: 0.9;
+    background: #717171;
+    opacity: 0.3;
     cursor: pointer;
     display: block;
     z-index: 9999;
@@ -12,13 +12,17 @@
     height: 100%;
 }
 
-.jh-alert-container {
+.jh-alert-box {
     position: absolute;
     z-index: 10000;
+    left: 50%;
+    top: 50%;
+}
+
+.jh-alert-container {
+    margin-top: -50%;
     background: #fff;
     border: solid rgba(58,58,58, 0.5) 13px;
-    left: calc(50% - 298px);
-    top: 80px;
 }
 
 .jh-alert-title {

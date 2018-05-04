@@ -10,7 +10,7 @@ export default function menuConf() {
                 'class': '',
                 'state': 'app.formPage',
                 'name': '表单',
-            }
+            },
         ]
     };
 

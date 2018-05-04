@@ -1,0 +1,49 @@
+.select-container {
+    cursor: pointer;
+    > span {
+        margin-right: 8px;
+        line-height: 21px;
+    }
+}
+
+.img-box {
+    margin-top: -50%; 
+}
+
+.img-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.upload-span {
+    
+    margin-right: 8px;
+}
+
+.upload-button {
+    text-align: center;
+    width: 230px;
+    cursor: pointer;
+    background: #00b38a;
+    > div {
+        display: inline-block;
+    }
+}
+
+.upload-button:hover {
+    opacity: .6;
+    padding: 2px;
+}
+.pre-container {
+    margin: 20px 0;
+    display: flex;
+    > span {
+        margin-right: 8px; 
+    }
+}
+.pre-img {
+    min-width:100px;
+    min-height:60px;
+    background: #eee;
+    display: inline-block;
+}

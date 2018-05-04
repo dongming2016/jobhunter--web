@@ -1,20 +1,31 @@
 <div class="register-container">
     <div class="register-box">
-        <div class="register-inputbox">
-        <label class="label"><span class="register-star">* </span>用户名</label>
-        <input type="text" required placeholder="请输入用户名" ng-model="$ctrl.user.name">
+        <div class="register-title">用户注册</div>
+        <div>
+            <div class="register-inputbox">
+            <label class="label"><span class="register-star">* </span>用户名</label>
+            <input type="text" required placeholder="请输入用户名" ng-model="$ctrl.user.name" class="register-input">
+            </div>
+            <div ng-show="$ctrl.error.name" class="register-err">{{$ctrl.error.name}}</div>
+            <div class="register-inputbox">
+            <label class="label"><span class="register-star">* </span>密码</label>
+            <input type="password" required placeholder="请输入密码" ng-model="$ctrl.user.password"  class="register-input">
+            </div>
+            <div ng-show="$ctrl.error.pwd" class="register-err">{{$ctrl.error.pwd}}</div>
+            <div class="register-inputbox">
+            <label class="label"><span class="register-star">* </span>重复密码</label>
+            <input type="password" required placeholder="请再次输入密码" ng-model="$ctrl.user.repassword"  class="register-input">
+            </div>
+            <div ng-show="$ctrl.error.repwd" class="register-err">{{$ctrl.error.repwd}}</div>
         </div>
-        <div class="register-inputbox">
-        <label class="label"><span class="register-star">* </span>密码</label>
-        <input type="password" required placeholder="请输入密码" ng-model="$ctrl.user.password">
+        <div class="register-button-container">
+            <div class="register-button" ng-click="$ctrl.OK()">确定</div>
         </div>
-        <div class="register-inputbox">
-        <label class="label"><span class="register-star">* </span>重复密码</label>
-        <input type="password" required placeholder="请再次输入密码" ng-model="$ctrl.user.repassword">
-        </div>
-    </div>
-    <div class="register-button-container">
-        <div class="register-button" ng-click="$ctrl.OK()">确定</div>
-        <div class="register-button" ng-click="$ctrl.cancel()">取消</div>
     </div>
 </div>
+
+<com-alert-box alert-title='{{$ctrl.alertTitle}}' ng-show='$ctrl.isBoxShow' hide-box='$ctrl.isBoxShow = false;'>
+        <div class="index-alert-content">
+            <span>{{$ctrl.message}}</span>
+        </div>
+</com-alert-box>

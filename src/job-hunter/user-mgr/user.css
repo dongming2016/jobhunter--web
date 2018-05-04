@@ -5,13 +5,18 @@
     margin-right: 4px;
   }
   .register-container {
-      margin-top: 50vh;
       width: 300px;
-      margin-left: auto;
-      margin-right: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+  }
+  .register-input {
+    padding: 3px 8px;
   }
   .register-box {
       margin-top: -50%;
+      padding: 9px;
+      background: #fff;
   }
   .register-star {
     color: red;
@@ -19,19 +24,37 @@
     vertical-align: -webkit-baseline-middle;
   }
   .register-inputbox {
-      height: 33px;
+      height: 24px;
+      margin-bottom: 20px;
   }
 
   .register-button {
-    width: 50px;
     background: #00b38a;
     margin: 0 auto;
     color: #fff;
     height: 30px;
     line-height: 30px;
-    display: inline-block;
+    cursor: pointer;
   }
 
   .register-button-container {
     text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .register-err {
+    font-size: 12px;
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 8px;
+    text-align: right;
+  }
+
+  .register-title {
+    margin-bottom: 35px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
   }
