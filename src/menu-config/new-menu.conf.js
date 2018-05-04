@@ -11,6 +11,11 @@ export default function menuConf() {
                 'state': 'app.formPage',
                 'name': '表单',
             },
+            {
+                'class': '',
+                'state': 'app.showPic',
+                'name': '图片展示',
+            },
         ]
     };
 

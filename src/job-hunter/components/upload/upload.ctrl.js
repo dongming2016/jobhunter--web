@@ -27,7 +27,7 @@ class UploadCtrl {
     upload() {
         const file = document.querySelector('input[type=file]').files[0];
         this.isFileUpload = false;
-        const result = this.uploadService.upload('/myapp/backend/upload', file);
+        const result = this.uploadService.upload('/myapp/backend/upload/pic', file);
         result.then(() => {
             this.isFileUpload = true;
             this.isBoxShow = true;

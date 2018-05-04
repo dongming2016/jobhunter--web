@@ -59,7 +59,7 @@ export default function routing($stateProvider, $locationProvider, $urlRouterPro
                     template: '<com-nav></com-nav>',
                 },
                 'body': {
-                    template: '<show-pics></show-pics>',
+                    template: '<show-pic></show-pic>',
                 }
             }
         });
