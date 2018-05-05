@@ -5,16 +5,14 @@
     margin-right: 4px;
   }
   .register-container {
-      width: 300px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20vh; 
   }
   .register-input {
     padding: 3px 8px;
   }
   .register-box {
-      margin-top: -50%;
       padding: 9px;
       background: #fff;
   }
@@ -57,4 +55,12 @@
     margin-top: 20px;
     font-weight: 700;
     font-size: 20px;
+  }
+
+  .user-alert-content {
+    height: 100px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
