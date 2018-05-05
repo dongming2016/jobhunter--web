@@ -9,9 +9,10 @@ import indexCss from './index.css';
 import fontCss from '../assess/font/style.css'
 import services from './service';
 import showPic from './showPic';
+import directive from './directive';
 
 export default angular.module('controllers', [
-    login, components, indexPaper, uploadPic, userMgr, services, showPic
+    login, components, indexPaper, uploadPic, userMgr, services, showPic, directive
 ]).component('app', {
     template
 }).name;

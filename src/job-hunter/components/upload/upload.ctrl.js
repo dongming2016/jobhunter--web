@@ -5,18 +5,9 @@ class UploadCtrl {
         this.acceptList = '';
         this.$document = $document;
         this.$scope = $scope;
-        this.file = null;
         this.isFileUpload = true;
         this.uploadService = uploadService;
         this.tips = '选择图片';
-        document.getElementById('upload').onchange = function() {
-            var imgFile = this.files[0];
-            var fr = new FileReader();
-            fr.onload = function() {
-                document.getElementById('preImg').src = fr.result;
-            };
-            fr.readAsDataURL(imgFile);
-        };
         this.isBoxShow = false;
     }
 
@@ -24,6 +15,9 @@ class UploadCtrl {
         jquery('#upload').click();
     }
 
+    hello() {
+        document.getElementById('preImg').src = this.$scope.file;
+    }
     upload() {
         const file = document.querySelector('input[type=file]').files[0];
         this.isFileUpload = false;

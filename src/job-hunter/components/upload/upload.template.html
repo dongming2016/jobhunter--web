@@ -1,7 +1,7 @@
 <div class="img-container">
     <div class="img-box">
         <div class="select-container"><span>{{$ctrl.tips}}</span><span class="icon-image" ng-click="$ctrl.select()"></span></div>
-        <input type="file" id="upload" style="display: none;" accept='{{$ctrl.acceptList}}'>
+        <input type="file" id="upload" style="display: none;" accept='{{$ctrl.acceptList}}' file-change='$ctrl.hello()'>
         <div class="pre-container"><span>图片预览</span><img id="preImg" class="pre-img"></div>
         <div class="upload-button">
             <div ng-click="$ctrl.upload()"><span class="icon-upload3 upload-span"></span><span>请上传</span></div>
