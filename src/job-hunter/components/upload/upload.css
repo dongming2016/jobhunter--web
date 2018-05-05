@@ -10,6 +10,10 @@
     margin-top: -50%; 
 }
 
+.img-larger{
+    transform: scale(2);
+}
+
 .img-container {
     position: absolute;
     top: 50%;
