@@ -1,6 +1,6 @@
 <header>
     <ul class="nav-container">
-        <li ng-repeat="$item in $ctrl.items" class="nav-item" ng-class="{active: $item.isActive}" ng-click="$ctrl.switch($item)">
+        <li ng-repeat="(index, $item) in $ctrl.items" class="nav-item" ng-class="{active: $ctrl.activeIndex==index}" ng-click="$ctrl.activeIndex = index;$ctrl.hello()">
             <a ui-sref="{{$item.state}}"><span class="{{$item.class}}"></span><div>{{$item.name}}</div></a>
         </li>
     </ul>

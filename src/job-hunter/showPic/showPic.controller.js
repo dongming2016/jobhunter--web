@@ -6,9 +6,15 @@ class showPic {
 
     $onInit() {
         const pictureReq = this.pictureService.getAllPicture();
-        pictureReq.then((data) => {
-            this.items = data.data;
-        });
+        try {
+            pictureReq.then((data) => {
+                this.items = data.data;
+            });
+        }
+        catch(e) {
+            console.log(e);
+        }
+        
     }
 }
 

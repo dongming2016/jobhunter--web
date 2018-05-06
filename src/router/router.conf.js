@@ -30,37 +30,20 @@ export default function routing($stateProvider, $locationProvider, $urlRouterPro
             }
             
         })
-        .state('app.uploadPic', {
+        .state('demo', {
+                url: '/demo',
+                template: '<com-nav></com-nav><ui-view></ui-view>',
+        })
+        .state('demo.uploadPic', {
             url: '/pictureUpload',
-            views: {
-                'header': {
-                    template: '<com-nav></com-nav>',
-                },
-                'body': {
-                    template: '<upload></upload>',
-                }
-            }
+            template: '<upload></upload>',
         })
-        .state('app.formPage', {
+        .state('demo.formPage', {
             url: '/user-mgr',
-            views: {
-                'header': {
-                    template: '<com-nav></com-nav>',
-                },
-                'body': {
-                    template: '<user-mgr></user-mgr>',
-                }
-            }
+                template: '<user-mgr></user-mgr>',
         })
-        .state('app.showPic', {
+        .state('demo.showPic', {
             url: '/show-pic',
-            views: {
-                'header': {
-                    template: '<com-nav></com-nav>',
-                },
-                'body': {
-                    template: '<show-pic></show-pic>',
-                }
-            }
+                template: '<show-pic></show-pic>',
         });
 }

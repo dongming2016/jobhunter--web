@@ -10,4 +10,6 @@ body {
 
 header {
     padding: 6px 16px;
+    height: 30px;
+    font-size: 28px;
 }
