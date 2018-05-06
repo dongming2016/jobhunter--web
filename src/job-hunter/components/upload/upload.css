@@ -23,6 +23,7 @@
     width: 230px;
     cursor: pointer;
     background: #00b38a;
+    padding: 2px;
     > div {
         display: inline-block;
     }
@@ -30,7 +31,6 @@
 
 .upload-button:hover {
     opacity: .6;
-    padding: 2px;
 }
 .pre-container {
     margin: 20px 0;
