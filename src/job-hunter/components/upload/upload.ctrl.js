@@ -9,6 +9,7 @@ class UploadCtrl {
         this.uploadService = uploadService;
         this.tips = '选择图片';
         this.isBoxShow = false;
+        this.imgUpload = false;
     }
 
     select() {
@@ -16,6 +17,7 @@ class UploadCtrl {
     }
 
     hello() {
+        this.imgUpload = true;
         document.getElementById('preImg').src = this.$scope.file;
     }
     upload() {

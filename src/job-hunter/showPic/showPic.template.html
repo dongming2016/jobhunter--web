@@ -1,10 +1,10 @@
 <div>
     <ul>
         <li ng-if="!$ctrl.items.length">
-            <img src="../../assess/bak.png" alt="没有数据">
+            <img src="/imgs/noData.png" alt="没有数据">
         </li>
-        <li ng-repeat="$item in $ctrl.items" class="">
-            <img src="{{$item.url}}">
+        <li ng-repeat="$item in $ctrl.items" class="pic-container">
+            <img src="{{$item}}">
         </li>
     </ul>    
 </div>
