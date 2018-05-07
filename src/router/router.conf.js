@@ -1,6 +1,7 @@
 /** @ngInject */
 export default function routing($stateProvider, $locationProvider, $urlRouterProvider) {
     $locationProvider.html5Mode(false);
+    $urlRouterProvider.when('/demo', '/demo/pictureUpload').when('', '/demo/pictureUpload');
     $urlRouterProvider.otherwise('/job-hunter/login');
     $stateProvider
         .state('app', {
@@ -31,8 +32,8 @@ export default function routing($stateProvider, $locationProvider, $urlRouterPro
             
         })
         .state('demo', {
-                url: '/demo',
-                template: '<com-nav></com-nav><ui-view></ui-view>',
+            url: '/demo',
+            template: '<com-nav></com-nav><ui-view></ui-view>',
         })
         .state('demo.uploadPic', {
             url: '/pictureUpload',
@@ -40,10 +41,10 @@ export default function routing($stateProvider, $locationProvider, $urlRouterPro
         })
         .state('demo.formPage', {
             url: '/user-mgr',
-                template: '<user-mgr></user-mgr>',
+            template: '<user-mgr></user-mgr>',
         })
         .state('demo.showPic', {
             url: '/show-pic',
-                template: '<show-pic></show-pic>',
+            template: '<show-pic></show-pic>',
         });
 }
